@@ -16,27 +16,20 @@ import Link from "next/link";
 
 const items: MenuProps["items"] = [
   {
-    label: (
-      <a
-        href='https://www.chefkang.xyz/'
-        target='_self'
-        rel='noopener noreferrer'>
-        回到首页
-      </a>
-    ),
-    key: "chefkang",
+    label: <Link href='/'>IMGPrompt</Link>,
+    key: "/",
     icon: <BgColorsOutlined />,
   },
   {
     label: (
       <a
-        href='https://gpt-tools.chefkang.xyz/'
+        href='https://www.chefkang.xyz/'
         target='_blank'
         rel='noopener noreferrer'>
         ChatGPT 提示词助手
       </a>
     ),
-    key: "gpttool",
+    key: "aishort",
     icon: <ExperimentOutlined />,
   },
 ];
@@ -70,6 +63,15 @@ export function Navigation() {
                 src='https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge'
                 alt='chat on Discord'
               />
+            </a>
+          </Col>
+          <Col>
+            <a
+              href='https://github.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ marginLeft: "10px" }}>
+              <GithubOutlined style={{ color: "black", fontSize: "24px" }} />
             </a>
           </Col>
         </Row>
